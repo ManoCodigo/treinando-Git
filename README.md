@@ -1,2 +1,2 @@
-# treinando-Git
- Repositorio com intiuto de aprender
+# Treinando-Git
+ Repositório com intuíto de aprender

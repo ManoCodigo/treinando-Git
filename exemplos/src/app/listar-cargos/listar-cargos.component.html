@@ -1,1 +1,58 @@
-<p>listar-cargos works!</p>
+<section>
+  <!-- ESTADOS -->
+  <div class="cec1">
+    <label>ESTADOS</label> <br>
+    <select class="sel">
+      <option *ngFor="let cargos of cargo" [value]="cargo"> {{ cargos.desc }}
+      </option>
+    </select>
+    <button>Setar Cargo</button>
+  </div>
+
+  <br>
+
+  <!-- CARGOS -->
+  <div class="cec1">
+    <label>CARGOS</label> <br>
+    <select class="sel">
+      <option *ngFor="let estados of estado | async" [value]="estados.sigla"> {{ estados.nome }}
+      </option>
+    </select>
+  </div>
+
+  <!-- TECNOLOGIAS -->
+  <div>
+    <label>TECNOLOGIAS</label> <br>
+    <select multiple class="tec">
+      <option *ngFor="let tecnos of tecno" [value]="tecnos.nome"> {{ tecnos.desc }}
+      </option>
+    </select>
+  </div>
+
+  <br>
+
+  <!-- RADIO -->
+  <div>
+    <label>RADIO</label> <br>
+    <div id="newsletter" *ngFor="let item of newsOp">
+      <label>
+        <input type="radio" [value]="item.valor"> {{ item.desc }}
+      </label>
+    </div>
+  </div>
+
+  <br>
+
+  <!-- TERMOS -->
+  <div>
+    <label>TERMOS</label> <br>
+    <div>
+      <label>
+        <input type="checkbox"> Aceite os termos agora, seu vacilão!
+      </label>
+    </div>
+  </div>
+</section>
+
+
+<!-- ASSISTIR AULA 103 NOVAMENTE ASSIM QUE O FORM ESTIVER FEITO -->
